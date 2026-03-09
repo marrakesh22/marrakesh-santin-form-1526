@@ -1,0 +1,110 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family: "Quicksand", sans-serif;
+font-size:1rem;
+background-color:#ffeef4; /* light pink background */
+color:#333;
+}
+
+legend{
+font-size:2rem;
+color:#ff6fa3; /* strong pink */
+margin-bottom:1rem;
+}
+
+main{
+max-width:50rem;
+margin:auto;
+padding:2rem;
+}
+
+form{
+background:#ffffff;
+padding:2rem;
+border-radius:10px;
+border:3px solid #b8f2e6; /* mint border */
+display:flex;
+flex-direction:column;
+gap:1rem;
+}
+
+/* labels */
+
+label{
+font-weight:bold;
+color:#ff6fa3;
+}
+
+/* inputs */
+
+input, textarea{
+padding:0.6rem;
+font-size:1rem;
+border:2px solid #b8f2e6;
+border-radius:6px;
+}
+
+input:focus, textarea:focus{
+outline:none;
+border-color:#ff9ec6;
+}
+
+/* textarea */
+
+textarea{
+min-height:120px;
+resize:vertical;
+}
+
+/* submit button */
+
+#submit-button{
+background-color:#b8f2e6; /* mint */
+color:#333;
+border:none;
+padding:0.7rem;
+font-weight:bold;
+cursor:pointer;
+border-radius:6px;
+transition:0.3s;
+}
+
+#submit-button:hover{
+background-color:#ff9ec6; /* pink hover */
+color:white;
+}
+
+/* Tablet */
+@media (min-width:25rem){
+
+form{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:1rem;
+}
+
+textarea{
+grid-column:span 2;
+}
+
+#submit-button{
+grid-column:span 2;
+}
+
+}
+
+/* Desktop */
+@media (min-width:40rem){
+
+main{
+max-width:50rem;
+margin:0 auto;
+}
+
+}
+
